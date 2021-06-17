@@ -48,24 +48,24 @@ ul {
 
 /* 가이드 라인 (Guide Line, 안내선) */
 
-div#wrap {
+/*div#wrap {
     border: 1px solid #000;
-}
+}*/
 /*div#headerFrame {
     border: 1px solid #08f;
 }*/
 /*header#header {
     border: 1px solid #f80;
 }*/
-div#slide {
+/*div#slide {
     border: 1px solid #000;
-}
-div#contents {
+}*/
+/*div#contents {
     border: 1px solid #000;
-}
-footer#footer {
+}*/
+/*footer#footer {
     border: 1px solid #000;
-}
+}*/
 
 /* 가이드 라인 (Guide Line, 안내선) */
 
@@ -74,7 +74,7 @@ footer#footer {
 /* div#wrap */
 div#wrap {
     width: 1200px;
-    border: 1px solid #f00;
+    /*border: 1px solid #f00;*/
     margin: 0 auto;
 }
 /* div#wrap */
@@ -173,26 +173,117 @@ div#slide span {
 /* div#contents */
 div#contents {
     height: 200px;
+
+    -webkit-flex: 1px;
+    -moz-flex: 1px;
+    -ms-flex: 1px;
+    -o-flex: 1px;
+    flex: 1px;
+}
+
+#contents>* {
+    width: 400px;
+    /*border: 1px solid #000;*/
+}
+
+
+div#bbs {
+    padding: 10px;
+}
+
+#bbs>* {
+    border: 1px solid #aaa;
+}
+
+#bbs>button.tabBtn {
+    font-size: 18px;
+    padding: 2px 8px;
+    position: relative;
+    top: 1px;
+
+}
+
+#bbs>button:first-child {
+    border-bottom-color: #eee;
+    margin-left: 20px;
+    left: 6px;
+}
+
+#bbs>button:nth-child(2) {
+    border-color: #eee;
+    border-bottom-color: #aaa;
+}
+
+#bbs>div {
+    padding: 10px;
+}
+#bbs>div>table td {
+    font-size: 14px;
+    padding-bottom: 18px;
+}
+#bbs>div>table td:first-child {
+    padding-right: 36px;
+}
+
+#contents>div:not(:first-child) {
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+}
+
+
+#contents img {
+    width: 180px;
 }
 
 /* div#contents */
 
 
-
-
 /* footer#footer */
 div#footerFrame {
     background-color: #0076be;
-
 }
 footer#footer {
     width: 1200px;
     height: 100px;
     margin: 0 auto;
-
 }
 
+#footer>div#footerLogo {
+    height: 100px;
+    line-height: 100px;
+}
 
+#footer>div#companyInfo {
+    /*border: 1px solid #f00;*/
+
+    -webkit-flex: 1px;
+    -moz-flex: 1px;
+    -ms-flex: 1px;
+    -o-flex: 1px;
+    flex: 1px;
+}
+
+#companyInfo>* {
+    height: 50px;
+    /*border: 1px solid #000;*/
+}
+
+#companyInfo ul#footerMainmenu {
+    height: 50px;
+    /*border: 1px solid #0f0;   */
+    justify-content: center;
+    align-items: center;
+}
+#companyInfo li.footerMainLi {
+    padding: 0 30px;
+    /*border: 1px solid #000;*/
+}
+
+#companyInfo div#copyright {
+    text-align: center;
+    line-height: 50px;
+}
 /* footer#footer */
 
 
